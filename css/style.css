@@ -1,0 +1,185 @@
+/* Custom CSS for Animal Saving Website */
+
+/* General Styles */
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+.navbar{
+    background-color: #5b33a5!important;
+    height: 100px;
+}
+.navbar .navbar-brand {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #28a745;
+    text-shadow: #343a40;
+}
+
+.navbar .nav-link {
+    font-size: 1.2rem;
+    transition: color 0.5s;
+    color: #f8f9fa;
+}
+.navbar .nav-link:hover {
+    color: #28a745;
+}
+.navbar li{
+    font-size: 1.2rem;
+    color: #ffffff!important;
+}
+.logo{
+    height: 100px;
+    padding: 10px 0;
+    transition: height 0.8s;
+}
+.logo:hover{
+    height: 110px;
+    width: auto;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url(../images/background.png);
+    color: #f8f9fa;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    padding: 100px 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    margin-top: 5rem;
+}
+.hero p {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.hero .btn-primary {
+    background-color: #28a745;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+.hero .btn-outline-light {
+    border-color: #f8f9fa;
+    color: #f8f9fa;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+.hero .btn-outline-light:hover {
+    background-color: white;
+    color: #28a745;
+}
+
+/* About Section */
+#about {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 140px 0;
+}
+#about h2 {
+    color: #28a745;
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.card img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    object-fit: cover;
+    height: 200px;
+}
+.card-title {
+    color: #28a745;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+.card-text {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+.btn-primary {
+    background-color: #28a745;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #218838;
+}
+#Help{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* How to Help Section */
+.accordion-button {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #218838;
+    color: white;
+}
+.accordion-button:hover {
+    background-color: #1e7e34;
+}
+.accordion-body {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    color: #343a40;
+}
+
+/* Contact Section */
+form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+form .form-label {
+    font-weight: bold;
+    color: #28a745;
+}
+form .form-control {
+    border-radius: 8px;
+}
+form .btn-primary {
+    background-color: #28a745;
+    border: none;
+}
+form .btn-primary:hover {
+    background-color: #218838;
+}
+
+/* Footer (if needed in future) */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}

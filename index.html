@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Saving Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img class="logo" src="./images/paw_green.png" alt="paw_logo_green"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categories">Adopt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#help">How to Help</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero text-center">
+        <h1 class="col-lg-12">Be a Life Saver, One Paw at a Time</h1>
+        <p>Rescue your next pet.</p>
+        <a href="#categories" class="btn btn-primary btn-lg">Adopt Now</a>
+    </div>
+
+    <!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <!-- Image Section -->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="./images/dogs.jpg" alt="Animal Rescue" class="img-fluid rounded shadow">
+            </div>
+            <!-- Content Section -->
+            <div class="col-lg-6">
+                <h2 class="text-success mb-4">About Us</h2>
+                <p class="lead text-muted">
+                    We are a non-profit organization dedicated to rescuing, rehabilitating, and finding forever homes for animals in need. Our mission is to create a world where every animal feels safe, loved, and valued.
+                </p>
+                <p>
+                    With the help of our passionate volunteers and generous donors, we provide shelter, medical care, and emotional support to animals of all kinds. Whether it's a stray dog, an abandoned cat, or a rescued bird, we ensure they get the love and care they deserve.
+                </p>
+                <a href="#contact" class="btn btn-success mt-3">Volunteer</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Categories Section -->
+    <section id="categories" class="container py-5">
+        <h2 class="text-center mb-4">Rehome an Animal</h2>
+        <ul class="nav nav-pills justify-content-center mb-4" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-cats-tab" data-bs-toggle="pill" data-bs-target="#pills-cats" type="button" role="tab">Cats</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-dogs-tab" data-bs-toggle="pill" data-bs-target="#pills-dogs" type="button" role="tab">Dogs</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="pills-tabContent">
+            <!-- Cats -->
+            <div class="tab-pane fade show active" id="pills-cats" role="tabpanel">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Cat">
+                            <div class="card-body">
+                                <h5 class="card-title">Fluffy</h5>
+                                <p class="card-text">Age: 2 years | Friendly and playful</p>
+                                <a href="#contact" class="btn btn-primary">Adopt Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dogs -->
+            <div class="tab-pane fade" id="pills-dogs" role="tabpanel">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Dog">
+                            <div class="card-body">
+                                <h5 class="card-title">Buddy</h5>
+                                <p class="card-text">Age: 3 years | Loyal and energetic</p>
+                                <a href="#contact" class="btn btn-primary">Adopt Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Help" class="container py-5">
+        <div id="help" class="container py-5">
+            <h2 class="text-center mb-4">How to Help</h2>
+            <div class="accordion" id="helpAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="donateHeading">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#donateCollapse">
+                            Donate
+                        </button>
+                    </h2>
+                    <div id="donateCollapse" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            Your donations help us provide food, shelter, and medical care for rescued animals.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="volunteerHeading">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#volunteerCollapse">
+                            Volunteer
+                        </button>
+                    </h2>
+                    <div id="volunteerCollapse" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Join our team and help us care for animals in need.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Contact Section -->
+        <div id="contact" class="container py-5">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </section>
+    <!-- How to Help Section -->
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
