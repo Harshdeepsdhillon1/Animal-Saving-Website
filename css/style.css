@@ -95,6 +95,14 @@ body {
 }
 
 
+#categories{
+    background-color: #5b33a5;
+    align-items: center;
+}
+#categories h2{
+    color: #f8f9fa;
+}
+/*Carousel*/
 /* Cards */
 .card {
     border: none;
@@ -111,11 +119,13 @@ body {
     border-top-right-radius: 8px;
     object-fit: cover;
     height: 200px;
+    width: 100%; /* Ensures the image spans the full width of the card */
 }
 .card-title {
     color: #28a745;
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 .card-text {
     color: #6c757d;
@@ -124,10 +134,78 @@ body {
 .btn-primary {
     background-color: #28a745;
     border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .btn-primary:hover {
     background-color: #218838;
+    transform: scale(1.05);
 }
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%; /* Adjust width for better visibility */
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #28a745; /* Green background for better visibility */
+    border-radius: 50%; /* Rounded buttons */
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.carousel-control-prev-icon:after,
+.carousel-control-next-icon:after {
+    content: ''; /* Remove default Bootstrap icon styling */
+}
+.carousel-control-prev-icon {
+    mask-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23ffffff" viewBox="0 0 16 16"%3E%3Cpath fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L6.707 7l4.647 4.646a.5.5 0 0 1-.708.708l-5-5a.5.5 0 0 1 0-.708l5-5a.5.5 0 0 1 .708 0z"/%3E%3C/svg%3E');
+    -webkit-mask-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23ffffff" viewBox="0 0 16 16"%3E%3Cpath fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L6.707 7l4.647 4.646a.5.5 0 0 1-.708.708l-5-5a.5.5 0 0 1 0-.708l5-5a.5.5 0 0 1 .708 0z"/%3E%3C/svg%3E');
+    background-color: #28a745;
+}
+.carousel-control-next-icon {
+    mask-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23ffffff" viewBox="0 0 16 16"%3E%3Cpath fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l5 5a.5.5 0 0 1 0 .708l-5 5a.5.5 0 0 1-.708-.708L9.293 7 4.646 2.354a.5.5 0 0 1 0-.708z"/%3E%3C/svg%3E');
+    -webkit-mask-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23ffffff" viewBox="0 0 16 16"%3E%3Cpath fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l5 5a.5.5 0 0 1 0 .708l-5 5a.5.5 0 0 1-.708-.708L9.293 7 4.646 2.354a.5.5 0 0 1 0-.708z"/%3E%3C/svg%3E');
+    background-color: #28a745;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+    .btn-primary {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.875rem;
+    }
+}
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    /* Small Screens: 1 card per row */
+    .col-sm-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    /* Medium Screens: 2 cards per row */
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 769px) {
+    /* Large Screens: 3 cards per row */
+    .col-lg-4 {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+}
+
+
 #Help{
     display: grid;
     grid-template-columns: 1fr 1fr;
